@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>grid component</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- component template -->
+<script type="text/x-template" id="grid-template">
+
+</script>
+
+<!-- demo root element -->
+<div id="demo">
+  <form id="search">
+    Search <input type="search" name="query">
+  </form>
+  <table>
+    <thead>
+    <tr>
+      <th>
+        Name
+        <span class="arrow dsc">
+        </span>
+      </th>
+      <th>
+        Power
+        <span class="arrow asc">
+        </span>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>
+        Chack Norris
+      </td>
+      <td>
+        Infinity
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Bruce Lee
+      </td>
+      <td>
+        9000
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Jackie Chan
+      </td>
+      <td>
+        7000
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Jet Li
+      </td>
+      <td>
+        8000
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script src="./script.js"></script>
+</body>
+</html>
