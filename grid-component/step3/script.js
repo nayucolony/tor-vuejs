@@ -14,12 +14,5 @@ const demo = new Vue({
       { name: 'Jet Li', power: 8000 },
     ],
   },
-  methods: {
-    log: function() {
-      console.log(this);
-      console.log(this._data.gridData);
-      console.log(this.$data.gridData);
-    },
-  },
 });
 
