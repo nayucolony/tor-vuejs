@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>grid component</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div id="demo">
+  <button @click="log"></button>
+  <form id="search">
+    Search <input type="search" name="query">
+  </form>
+  <table>
+    <thead>
+    <tr>
+      <th
+        v-for="key in gridColumns"
+      >
+        {{ key | capitalize }}
+        <span class="arrow dsc">
+        </span>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr v-for="entry in gridData">
+      <td v-for="key in gridColumns">
+        {{ entry[key] }}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script src="./script.js"></script>
+</body>
+</html>
